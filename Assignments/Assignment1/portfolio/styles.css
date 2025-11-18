@@ -1,0 +1,155 @@
+/* styles.css — No JavaScript required.
+   Uses CSS-only responsive nav (checkbox toggle).
+   Keep this file in the same folder as the HTML files.
+*/
+
+:root{
+  --primary:#0ea5a4;
+  --accent:#7c3aed;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --radius:10px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.45;color:#111;background:#fbfbff}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+
+/* Header - fixed to top */
+.site-header{position:fixed;top:0;left:0;right:0;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));backdrop-filter:blur(6px);border-bottom:1px solid rgba(15,23,42,0.04);z-index:90}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0}
+.logo{font-family:'Playfair Display', serif;font-size:1.25rem;text-decoration:none;color:#111}
+
+/* CSS-only nav toggle controls */
+.nav-toggle-input{display:none}
+.nav-toggle-label{display:none;cursor:pointer;font-size:1.25rem;padding:0.25rem 0.5rem}
+
+/* Nav */
+.main-nav{display:flex;align-items:center}
+.nav-list{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.nav-list a{display:inline-block;text-decoration:none;padding:0.45rem 0.6rem;border-radius:6px;color:#111}
+.nav-list a:hover{background:rgba(124,58,237,0.08)}
+
+/* Hero */
+.hero{display:flex;gap:2rem;align-items:center;padding:6rem 0 2rem} /* offset for fixed header */
+.hero-left h1{font-family:'Playfair Display',serif;font-size:2rem;margin:0}
+.accent{color:var(--accent)}
+.tagline{color:var(--muted);margin-top:0.5rem}
+.cta{display:inline-block;background:var(--primary);color:#fff;padding:0.6rem 0.9rem;border-radius:8px;text-decoration:none;margin-right:0.5rem}
+.cta.ghost{background:transparent;border:1px solid rgba(15,23,42,0.06);color:#111}
+.profile-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Sections */
+section{margin-bottom:2rem}
+.skills-grid{display:flex;flex-wrap:wrap;gap:0.6rem}
+.skill{background:#fff;padding:0.6rem 0.8rem;border-radius:8px;box-shadow:0 4px 10px rgba(16,24,40,0.04)}
+
+/* Tables */
+.edu-table, .projects-table{width:100%;border-collapse:collapse;margin-top:0.75rem}
+.edu-table th, .edu-table td, .projects-table th, .projects-table td{padding:0.6rem;border:1px solid rgba(15,23,42,0.06);text-align:left}
+
+/* Projects grid - CSS Grid */
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.project-card{background:var(--card);padding:1rem;border-radius:12px;border:2px dashed rgba(15,23,42,0.04);display:flex;flex-direction:column;justify-content:space-between;min-height:260px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+.card-media{height:120px;border-radius:8px;overflow:hidden;margin-bottom:0.6rem}
+.tags{list-style:none;padding:0;display:flex;gap:0.4rem;flex-wrap:wrap;margin:0.5rem 0 0}
+.tags li{background:#eef2ff;padding:0.25rem 0.5rem;border-radius:6px;font-size:0.85rem}
+
+/* Buttons inside cards */
+.btn{display:inline-block;padding:0.45rem 0.65rem;border-radius:8px;text-decoration:none;background:var(--accent);color:#fff}
+
+/* Footer */
+.site-footer{background:#0b1220;color:#fff;padding:1.25rem 0;margin-top:2rem}
+.site-footer a{color:inherit;text-decoration:underline}
+.footer-grid{display:flex;gap:2rem;justify-content:space-between;align-items:flex-start}
+.footer-grid > div{flex:1}
+
+/* Contact layout */
+.contact-grid{display:grid;grid-template-columns:1fr 320px;gap:2rem}
+.contact-form label{display:block;margin-top:0.6rem;font-weight:600}
+.contact-form input, .contact-form textarea{width:100%;padding:0.6rem;border-radius:8px;border:1px solid rgba(15,23,42,0.06);margin-top:0.25rem}
+.contact-info address{font-style:normal}
+
+/* Demonstration of box model (Question 9) - three boxes */
+.box-model-demo{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0}
+.box{background:#fff;padding:20px;border:4px solid rgba(15,23,42,0.06);margin:20px;border-radius:8px;min-width:220px;flex:1}
+.box.small{padding:8px;border-width:2px;margin:8px}
+.box.large{padding:40px;border-width:6px;margin:32px}
+
+/* Card component (Question 10) */
+.card-component{width:300px;height:400px;border-radius:12px;box-shadow:0 10px 30px rgba(15,23,42,0.08);overflow:hidden;background:#fff;border-style:double;border-width:4px;border-color:rgba(124,58,237,0.12);display:flex;flex-direction:column}
+.card-component .card-img{height:160px;background:linear-gradient(90deg,#eef2ff,#fff1f2);display:flex;align-items:center;justify-content:center}
+.card-component .card-body{padding:1rem;flex:1;display:flex;flex-direction:column}
+.card-component .card-body h4{margin:0 0.5rem 0.5rem}
+.card-component .card-body p{flex:1;margin:0 0.5rem 1rem}
+.card-component .card-body .card-btn{align-self:flex-end;margin:0.5rem}
+
+/* headings demo (Question 7) */
+.toc{background:#fff;padding:1rem;border-radius:8px}
+
+/* navigation display demo (Question 16) */
+.inline-demo .nav-list{display:flex}
+.block-demo .nav-list{display:block}
+
+/* Photo gallery (Question 17) - Flexbox */
+.gallery{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center}
+.gallery .cell{flex:1 1 calc(33.333% - 20px);max-width:calc(33.333% - 20px);display:flex;align-items:center;justify-content:center}
+.gallery .cell a img{width:100%;height:auto;display:block;border-radius:8px}
+
+/* Sticky sidebar (Question 14) */
+.layout-with-sidebar{display:grid;grid-template-columns:200px 1fr;gap:1rem}
+.sidebar{position:sticky;top:80px;background:#fff;padding:1rem;border-radius:8px}
+.content-area{background:#fff;padding:1rem;border-radius:8px}
+
+/* positioning demo (Question 15) */
+.pos-container{position:relative;height:260px;background:#fff;border-radius:8px;padding:1rem}
+.pos-relative{position:relative;left:20px;top:20px;border:2px dashed #e5e7eb;padding:8px}
+.pos-absolute{position:absolute;right:10px;bottom:10px;border:2px dotted #c7f9cc;padding:8px}
+.pos-fixed{position:fixed;left:10px;bottom:10px;background:var(--accent);color:#fff;padding:8px;border-radius:6px}
+
+/* Responsive rules */
+
+/* Tablet */
+@media (max-width:1024px){
+  .projects-grid{grid-template-columns:repeat(2,1fr)}
+  .hero{padding-top:5.5rem}
+  .container{padding:0.75rem}
+}
+
+/* Mobile: transform nav into vertical and enable checkbox toggle */
+@media (max-width:767px){
+  .nav-toggle-label{display:block}
+  .main-nav{width:100%}
+  .nav-list{flex-direction:column;gap:0;display:none;background:transparent;padding:0.5rem;border-radius:8px}
+  .nav-list a{padding:0.6rem 0.8rem}
+  /* when checkbox is checked, show the nav */
+  .nav-toggle-input:checked + .nav-toggle-label + .main-nav .nav-list,
+  .nav-toggle-input:checked + .main-nav .nav-list,
+  .nav-toggle-input:checked ~ .main-nav .nav-list { display:flex; }
+  .hero{flex-direction:column;align-items:flex-start;padding-top:5rem}
+  .projects-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{flex-direction:column}
+}
+
+/* Large desktop */
+@media (min-width:1201px){
+  .projects-grid{grid-template-columns:repeat(3,1fr)}
+}
+
+/* Responsive nav background color change between 768px - 1024px */
+@media (min-width:768px) and (max-width:1024px){
+  .site-header{background:linear-gradient(90deg,#fff,#fffbeb)}
+}
+
+/* responsive card grid (Question 20) */
+.responsive-cards{display:grid;gap:1rem;grid-template-columns:repeat(4,1fr)}
+@media (max-width:1200px){ .responsive-cards{grid-template-columns:repeat(3,1fr)} }
+@media (max-width:768px){ .responsive-cards{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:480px){ .responsive-cards{grid-template-columns:1fr} }

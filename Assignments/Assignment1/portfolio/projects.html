@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Kanagaraj</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html" class="logo">Kanagaraj</a></div>
+
+      <!-- Reuse pure-CSS nav toggle -->
+      <input type="checkbox" id="nav-toggle-2" class="nav-toggle-input" aria-hidden="true">
+      <label for="nav-toggle-2" class="nav-toggle-label" aria-hidden="true">☰</label>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="projects-intro">
+      <h1>Projects</h1>
+      <p>Below are sample projects showcased as responsive cards (CSS Grid) and a projects table.</p>
+    </section>
+
+    <section class="projects-grid" aria-label="Project cards">
+      <!-- Six project cards -->
+      <article class="project-card">
+        <div class="card-media" role="img" aria-label="Project image">
+          <svg viewBox="0 0 300 150"><rect width="300" height="150" rx="8" fill="#eef2ff"/></svg>
+        </div>
+        <h3>Smart Helmet</h3>
+        <p>IoT safety helmet with sensors and alerts.</p>
+        <ul class="tags"><li>Arduino</li><li>MQTT</li><li>Java</li></ul>
+        <div class="card-actions"><a class="btn" href="#" target="_blank" rel="noopener">View</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="card-media"><svg viewBox="0 0 300 150"><rect width="300" height="150" rx="8" fill="#fff7ed"/></svg></div>
+        <h3>Medical Plant ID</h3>
+        <p>Website to identify medicinal plants using ML-assisted features.</p>
+        <ul class="tags"><li>ML</li><li>HTML/CSS</li><li>JS</li></ul>
+        <div class="card-actions"><a class="btn" href="#" target="_blank" rel="noopener">View</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="card-media"><svg viewBox="0 0 300 150"><rect width="300" height="150" rx="8" fill="#e6fffa"/></svg></div>
+        <h3>Thatha Chai</h3>
+        <p>Small business website for a tea shop with order form.</p>
+        <ul class="tags"><li>Spring</li><li>MySQL</li><li>HTML</li></ul>
+        <div class="card-actions"><a class="btn" href="#" target="_blank" rel="noopener">View</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="card-media"><svg viewBox="0 0 300 150"><rect width="300" height="150" rx="8" fill="#fff1f2"/></svg></div>
+        <h3>Foodifreey</h3>
+        <p>Community site to upload and share free food places in Tamil Nadu.</p>
+        <ul class="tags"><li>JS</li><li>Node</li><li>CSS</li></ul>
+        <div class="card-actions"><a class="btn" href="#" target="_blank" rel="noopener">View</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="card-media"><svg viewBox="0 0 300 150"><rect width="300" height="150" rx="8" fill="#f0fdf4"/></svg></div>
+        <h3>SaaS for Land Leasing</h3>
+        <p>Platform connecting landowners and aspiring farmers.</p>
+        <ul class="tags"><li>React</li><li>Stripe</li><li>SQL</li></ul>
+        <div class="card-actions"><a class="btn" href="#" target="_blank" rel="noopener">View</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="card-media"><svg viewBox="0 0 300 150"><rect width="300" height="150" rx="8" fill="#eef2f3"/></svg></div>
+        <h3>Smart Advisor Portal</h3>
+        <p>Financial guidance portal with AI chatbot integration (prototype).</p>
+        <ul class="tags"><li>Python</li><li>Flask</li><li>JS</li></ul>
+        <div class="card-actions"><a class="btn" href="#" target="_blank" rel="noopener">View</a></div>
+      </article>
+    </section>
+
+    <section class="projects-table-section">
+      <h2>All Projects (table)</h2>
+      <table class="projects-table">
+        <thead>
+          <tr><th>Project Name</th><th>Category</th><th>Technologies</th><th>Completion Date</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Smart Helmet</td><td>IoT</td><td>Arduino, Java</td><td>2024-10-05</td></tr>
+          <tr><td>Medical Plant ID</td><td>ML / Web</td><td>Python, JS</td><td>2025-02-20</td></tr>
+          <tr><td>Thatha Chai</td><td>Web App</td><td>Spring, MySQL</td><td>2025-03-10</td></tr>
+          <tr><td>Foodifreey</td><td>Community Web</td><td>JS, Node</td><td>2025-05-09</td></tr>
+          <tr><td>SaaS Land Leasing</td><td>SaaS</td><td>React, Node</td><td>2025-06-26</td></tr>
+          <tr><td>Smart Advisor Portal</td><td>FinTech</td><td>Python, Flask</td><td>2025-09-01</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Kanagaraj</strong><p>Portfolio</p></div>
+      <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li></ul></div>
+      <div><h4>Contact</h4><address>Email: <a href="mailto:kanagaraj@example.com">kanagaraj@example.com</a></address></div>
+    </div>
+    <div class="copyright">© 2025 Kanagaraj. All rights reserved.</div>
+  </footer>
+</body>
+</html>

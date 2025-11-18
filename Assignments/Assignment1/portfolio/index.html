@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kanagaraj — Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html" class="logo">Kanagaraj</a>
+            </div>
+
+            <!-- Pure-CSS responsive nav: checkbox toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">☰</label>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-left">
+                <h1>Hi, I'm <span class="accent">Kanagaraj</span></h1>
+                <p class="tagline">Web Developer • Java • Spring • Enthusiastic learner</p>
+                <p>
+                    <a class="cta" href="projects.html">View Projects</a>
+                    <a class="cta ghost" href="contact.html">Contact Me</a>
+                </p>
+            </div>
+            <div class="hero-right">
+                <img src="kanagaraj.jpg" alt="Kanagaraj Photo" class="profile-img">
+                <svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="Profile photo placeholder">
+                    <rect width="220" height="220" rx="12" fill="url()" />
+                    <defs>
+                        <linearGradient id="g" x1="0" x2="1">
+                            <stop offset="0" stop-color="#f0f2f5" />
+                            <stop offset="1" stop-color="#dfe7f3" />
+                        </linearGradient>
+                    </defs>
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+                        font-family="Inter, sans-serif" font-size="18" fill="#6b7280">PHOTO</text>
+                </svg>
+            </div>
+        </section>
+
+        <section class="about container" id="about">
+            <h2>About Me</h2>
+            <p>I am a recently graduated student with a strong interest in web development and modern digital
+                technologies. Over the past few years, I’ve built a solid foundation in HTML, CSS, and responsive
+                design, and I enjoy creating clean, user-friendly websites. I love learning new skills, solving
+                problems, and improving my coding abilities step by step. I’m currently looking for opportunities where
+                I can apply my knowledge, gain real-world experience, and grow into a professional developer.</p>
+        </section>
+
+        <section class="skills container" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">HTML &amp; CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Java &amp; Spring</div>
+                <div class="skill">SQL &amp; MySQL</div>
+                <div class="skill">Git &amp; GitHub</div>
+            </div>
+        </section>
+
+        <section class="education container">
+            <h2>Education / Experience</h2>
+            <table class="edu-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Institution / Company</th>
+                        <th>Role / Degree</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2021-2025</td>
+                        <td>Excel Engineering College</td>
+                        <td>B.E. Computer Science (ongoing)</td>
+                    </tr>
+                    <tr>
+                        <td>2025</td>
+                        <td>Imagecon</td>
+                        <td>Web Development Intern</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>Kanagaraj</strong>
+                <p>Frontend Developer • Kanagaraj s</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <address>
+                    Email: <a href="mailto:kanagarajias3@gmail.com">kanagarajias3@gmail.com</a><br>
+                    Phone: <a href="tel:+919999999999">+91 9597309475</a>
+                </address>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Kanagaraj. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
